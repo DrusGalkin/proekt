@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+	font-family: 'Ramona-Bold'; 
+	src: url(../fonts/Ramona-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'Ramona-Light'; 
+	src: url(../fonts/Ramona-Light.ttf); 
+}
+
+.header{
+    background-color: rgb(1, 114, 29);
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+    left: 0;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 99;
+}
+
+.header svg{
+    width: 50px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1{
+    font-size: 60px;
+    vertical-align: middle;
+    font-family: 'Ramona-Bold'; 
+}
+
+.comment p{
+    font-size: 27px;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-family: 'Ramona-Light'; 
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 92, 23, 0.877);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding-bottom: 60px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    font-family: 'Ramona-Light'; 
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.container{
+
+    margin-left: 160px;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+section{
+    background: #c92020;
+    height: 100%;
+}
+
+.divLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#toggleBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ramona-Light'; 
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+

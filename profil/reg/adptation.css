@@ -1,0 +1,13 @@
+@media (max-width:750px){
+    .form{
+        margin: 0 auto;
+    }
+
+    .form_title{
+        font-size: 30px
+    }
+
+    .form_input{
+        padding-bottom: 0;
+    }
+}

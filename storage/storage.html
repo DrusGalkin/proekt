@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хранилище</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptation.css">
+</head>
+<body>
+    <div id="headerFlex" class="header">
+          <div class="divLogo">
+            <div class="logo">        
+                <button id="toggleBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M4 8H20M4 16H12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+                <h1><a href="../index.html" target="_blank">OldMine</a></h1>        
+            </div>
+            <div class="comment">
+                <p>Раньше было лучше!!!</p>
+            </div>            
+          </div>
+    </div>
+
+    <div class="adapt">
+      <div id="myDiv" class="sidenav">
+        <a href="#about">Сервера</a>
+        <a href="#services">Моды</a>
+        <a href="#clients">Звуки</a>
+        <a href="#contact">Текстуры</a>
+      </div>
+
+      <div id="containerSer" class="container">
+        <section>
+            ываываыв<br>
+        </section>
+      </div>  
+    </div>
+
+    
+
+
+      <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const myDiv = document.getElementById('myDiv');
+        const headerFlex = document.getElementById('headerFlex');
+        const containerSer = document.getElementById('containerSer')
+        const mq = window.matchMedia("(max-width: 730px)");
+  
+            toggleBtn.addEventListener('click', function() {
+                if (myDiv.style.display === 'none' || myDiv.style.display === '') {
+                    myDiv.style.display = 'flex';
+                    headerFlex.style.justifyContent = 'start';
+                    containerSer.style.marginLeft = "160px";
+                } else {
+                    myDiv.style.display = 'none';
+                    headerFlex.style.justifyContent = 'space-around';
+                    containerSer.style.marginLeft = "0px";
+                }
+            function handleMediaQuery(mq) {
+             const element = document.getElementById("targetElement");
+                if (mq.matches) {
+                    containerSer.style.marginLeft = "0px";
+                } 
+            }
+
+            handleMediaQuery(mq); // Инициализация для текущего состояния экрана
+            mq.addListener(handleMediaQuery); // Добавление слушателя для отслеживания изменений
+        });
+      </script>
+
+</body>
+</html>

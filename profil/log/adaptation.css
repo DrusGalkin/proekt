@@ -1,0 +1,13 @@
+@media (max-width:750px){
+    .form{
+        margin: 0 auto;
+    }
+
+    .reg_text_a{
+        padding-top: 10px;
+    }
+
+    .reg{
+        flex-direction: column;
+    }
+}
