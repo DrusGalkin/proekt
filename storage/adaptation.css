@@ -1,4 +1,7 @@
 @media (max-width: 730px) {
+    .header{
+        position: relative;
+    }
 
     .sidenav {
         display: none;
@@ -32,5 +35,23 @@
 @media (min-width: 730px){
     .container {
         margin-left: 160px;
+    }
+}
+
+@media (max-width: 630px){
+    .block{
+        flex-direction: column;
+    }
+
+    .block h2{
+        margin-left: 0;
+    }
+
+    .homak_i_text{
+        flex-direction: column-reverse;        
+    }
+
+    .text button{
+        margin-right: 0px;
     }
 }

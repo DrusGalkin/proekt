@@ -1,0 +1,50 @@
+@media (max-width: 730px) {
+    .header{
+        position: relative;
+    }
+
+    .sidenav {
+        display: none;
+        width: 100%;
+        position: relative;
+        box-shadow: 4px 3px rgba(0, 71, 18, 0.877);
+    }
+
+    .adapt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #toggleBtn{
+        padding-right: 0;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
+
+    .sidenav a{
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 730px){
+    .container {
+        margin-left: 160px;
+    }
+}
+
+@media (max-width: 577px){
+    .text_serv{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .block34{
+        top: -47px;
+    }
+}
