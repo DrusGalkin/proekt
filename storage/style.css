@@ -100,8 +100,10 @@ html{
 }
 
 section{
-    background: #c92020;
+    padding: 20px;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .divLogo{
@@ -121,4 +123,90 @@ section{
     padding-right: 50px;
 }
 
+.block{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 875px;
+    font-family: 'Ramona-Bold'; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.block h2{
+    font-size: 60px;
+    margin-left: 20px;
+    color: white;
+    text-shadow:
+    2px 0 0 #000,
+    -2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000,
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 5px #000;
+}
+
+.block img{
+    width: 200px;
+}
+
+.block2 p{
+    width: 100%;
+    max-width: 350px;
+    color: white;
+    text-shadow:
+    2px 0 0 #000,
+    -2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000,
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 5px #000;
+}
+
+.block2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info{
+    background-color: rgba(184, 184, 184, 0.541);
+    padding: 20px;
+}
+
+.text h2{
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+    font-family: 'Ramona-Light'; 
+    font-size: 20px;
+    text-shadow:
+    2px 0 0 #000,
+    -2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000,
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 5px #000;    
+    margin-right: 20px;
+}
+
+.homak_i_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.homak img{
+    width: 200px;
+}
