@@ -15,7 +15,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 0px;
         padding: 10px;
     }
 
@@ -39,10 +39,10 @@
 }
 
 @media (max-width: 577px){
-    .text_serv{
+    /* .text_serv{
         font-size: 10px;
         padding: 10px;
-    }
+    } */
 
     .block34{
         top: -47px;
