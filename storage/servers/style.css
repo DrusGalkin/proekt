@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+	font-family: 'Ramona-Bold'; 
+	src: url(../../fonts/Ramona-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'Ramona-Light'; 
+	src: url(../../fonts/Ramona-Light.ttf); 
+}
+
+.header{
+    background-color: rgb(1, 114, 29);
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+    left: 0;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 99;
+}
+
+.header svg{
+    width: 50px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1{
+    font-size: 60px;
+    vertical-align: middle;
+    font-family: 'Ramona-Bold'; 
+}
+
+.comment p{
+    font-size: 27px;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-family: 'Ramona-Light'; 
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 92, 23, 0.877);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding-bottom: 60px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    font-family: 'Ramona-Light'; 
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.container{
+
+    margin-left: 160px;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+section{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#toggleBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ramona-Light'; 
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+
+.logo_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 3px red; */
+}
+
+.logo_text img{
+    width: 100%;
+    max-width: 852px;
+    min-width: 273px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.text_serv{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 4px 3px rgb(71, 71, 71);
+    color: white;
+    font-family: 'Ramona-Light'; 
+    text-shadow:
+    1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    0.5px 0.5px 0 #000,
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 2.5px #000; 
+}
+
+.block34{
+    padding: 20px;
+    position: relative;
+    top: -80px;
+}
+
+.sapusk{
+    margin-top: 20px;
+}
+
+.sapusk a{
+    text-decoration: none;
+    color: yellow;
+    text-shadow:
+    1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    0.5px 0.5px 0 #000,
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 2.5px #000;
+    font-family: 'Ramona-Bold';  
+}
+
+.sapusk a:hover{
+    
+}
+
+.spiski_serv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn2 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #ddd
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+    background-color: #2980B9;
+}
+
+.dropdown3 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn3 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content3 a:hover {
+    background-color: #ddd
+}
+
+.dropbtn3:hover, .dropbtn3:focus {
+    background-color: #2980B9;
+}
+
+.dropdown4 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn4 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropdown-content4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content4 a:hover {
+    background-color: #ddd
+}
+
+.dropbtn4:hover, .dropbtn4:focus {
+    background-color: #2980B9;
+}
+
+.dropdown5 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn5 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 162px;
+}
+
+.dropdown-content5 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content5 a:hover {
+    background-color: #ddd
+}
+
+.dropbtn5:hover, .dropbtn5:focus {
+    background-color: #2980B9;
+}
+.show {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
